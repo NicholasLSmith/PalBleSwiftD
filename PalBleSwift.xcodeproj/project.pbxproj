@@ -10,6 +10,7 @@
 		E14E2D8B224BB46F00AD7480 /* PalBleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14E2D81224BB46F00AD7480 /* PalBleSwift.framework */; };
 		E14E2D90224BB46F00AD7480 /* PalBleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E2D8F224BB46F00AD7480 /* PalBleSwiftTests.swift */; };
 		E14E2D92224BB46F00AD7480 /* PalBleSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = E14E2D84224BB46F00AD7480 /* PalBleSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E14E2D9C224BB53700AD7480 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E2D9B224BB53700AD7480 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		E14E2D8A224BB46F00AD7480 /* PalBleSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalBleSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14E2D8F224BB46F00AD7480 /* PalBleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalBleSwiftTests.swift; sourceTree = "<group>"; };
 		E14E2D91224BB46F00AD7480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E14E2D9B224BB53700AD7480 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				E14E2D84224BB46F00AD7480 /* PalBleSwift.h */,
 				E14E2D85224BB46F00AD7480 /* Info.plist */,
+				E14E2D9B224BB53700AD7480 /* Test.swift */,
 			);
 			path = PalBleSwift;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					E14E2D80224BB46F00AD7480 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					E14E2D89224BB46F00AD7480 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E14E2D9C224BB53700AD7480 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		E14E2D96224BB46F00AD7480 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.paltechnologies.PalBleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		E14E2D97224BB46F00AD7480 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		E14E2D99224BB46F00AD7480 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG7FWJE4T4;
 				INFOPLIST_FILE = PalBleSwiftTests/Info.plist;
@@ -409,6 +418,7 @@
 		E14E2D9A224BB46F00AD7480 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG7FWJE4T4;
 				INFOPLIST_FILE = PalBleSwiftTests/Info.plist;
